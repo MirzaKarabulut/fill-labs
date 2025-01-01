@@ -9,10 +9,12 @@ Frontend Components
 
 
 # Installation
+  ```bash
 - Backend
 
 Clone the repository:
-git clone [https://github.com/yourusername/user-management.git](https://github.com/MirzaKarabulut/fill-labs.git)
+
+git clone https://github.com/MirzaKarabulut/fill-labs.git
 cd user-management/backend
 
 Install dependencies:
@@ -31,7 +33,7 @@ npm install
 
 Run the development server:
 npm run dev
-
+```
 # Usage
 
 - Backend
@@ -42,11 +44,20 @@ The frontend development server will be running on http://localhost:3000. It pro
 
 # API Endpoints
 
-GET /api/users: Retrieve a list of users.
-GET /api/users/:id: Retrieve a specific user by ID.
-POST /api/users: Create a new user.
-PUT /api/users/:id: Update an existing user by ID.
-DELETE /api/users/:id: Delete a user by ID.
+- GET /api/users:
+Retrieve a list of users.
+
+- GET /api/users/:id:
+Retrieve a specific user by ID.
+
+- POST /api/users:
+Create a new user.
+
+- PUT /api/users/:id:
+Update an existing user by ID.
+
+- DELETE /api/users/:id:
+Delete a user by ID.
 
 # Frontend Components
 
