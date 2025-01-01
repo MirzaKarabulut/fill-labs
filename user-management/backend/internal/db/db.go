@@ -11,7 +11,7 @@ var DB *gorm.DB
 
 func Connection() error {
 	var err error
-	DB, err = gorm.Open(sqlite.Open("file::memory:?cache=shared"), &gorm.Config{})
+	DB, err = gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
 	if err != nil {
 		return fmt.Errorf("could not connect to the database: %w", err)
 	}
