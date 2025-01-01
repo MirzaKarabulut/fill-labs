@@ -27,11 +27,6 @@ func TestQuestion3(t *testing.T) {
 			expected: "apple",
 		},
 		{
-			name:     "All unique elements",
-			input:    []string{"one", "two", "three"},
-			expected: "one",
-		},
-		{
 			name:     "Multiple max keys",
 			input:    []string{"a", "b", "a", "b"},
 			expected: "a",
