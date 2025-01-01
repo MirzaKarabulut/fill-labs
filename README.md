@@ -3,7 +3,7 @@
 - Clone the repository
 
 git clone https://github.com/MirzaKarabulut/fill-labs.git
-cd user-management/backend
+cd algorithms
 
 - Testing
   
