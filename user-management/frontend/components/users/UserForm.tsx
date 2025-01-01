@@ -28,6 +28,14 @@ export default function UserForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!/^[a-zA-Z]+$/.test(formData.Username || "")) {
+      alert("Username must contain only letters.");
+      return;
+    }
+    if (formData.Age === undefined || formData.Age < 0 || formData.Age > 100) {
+      alert("Age must be between 0 and 100.");
+      return;
+    }
     onSubmit({
       Username: formData.Username,
       Age:
@@ -91,7 +99,7 @@ export default function UserForm({
             <button
               type="button"
               onClick={onBack}
-              className="px-4 py-2 border rounded hover:bg-gray-50 text-gray-900 "
+              className="px-4 py-2 border rounded hover:bg-gray-50"
             >
               Cancel
             </button>
