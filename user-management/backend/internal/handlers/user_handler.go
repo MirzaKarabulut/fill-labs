@@ -8,7 +8,7 @@ import (
 func ListUsers(ctx *fiber.Ctx) error {
 	user := []db.User{}
 
-	if err := db.DB.Find(&user).Error; err != nil {
+	if err := db.DB.Order("created_at DESC").Find(&user).Error; err != nil {
 		return ctx.Status(fiber.StatusInternalServerError).JSON(errorResponse(err))
 	}
 
