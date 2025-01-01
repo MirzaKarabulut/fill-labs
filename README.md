@@ -1,10 +1,22 @@
+### Algorithms
+- Testing
+  
+To run the tests for the algorithms, use the following command:
+ ```bash
+  go test
+```
+
+
 ### User Management System
 - This project is a User Management System built with a Go backend using the Fiber framework and a React frontend. The system allows for creating, reading, updating, and deleting users.
 
 ## Table of Contents:
 Installation
+
 Usage
+
 API Endpoints
+
 Frontend Components
 
 
