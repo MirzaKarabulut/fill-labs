@@ -1,8 +1,13 @@
 ### Algorithms
+ ```bash
+- Clone the repository
+
+git clone https://github.com/MirzaKarabulut/fill-labs.git
+cd user-management/backend
+
 - Testing
   
 To run the tests for the algorithms, use the following command:
- ```bash
   go test
 ```
 
